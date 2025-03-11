@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımda</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 bg-black text-light">
+    <!-- Navbar -->
+
+    <!-- nav.navbar.navbar-expand-lg.bg-black.shadow-sm[aria-label="Ana Menü"] -->
+    <nav
+      class="navbar navbar-expand-lg bg-black shadow-sm"
+      aria-label="Ana Menü"
+    >
+      <!-- .container>button.navbar-toggler[type="button"][data-bs-toggle="collapse"][data-bs-target="#navbarNav"][aria-controls="navbarNav"][aria-expanded="false"][aria-label="Menüyü Aç/Kapat"] -->
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Menüyü Aç/Kapat"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 
+          Bootstrap sınıfı, düğmeyi bir çökertme düğmesi olarak tanımlar 
+          Düğmenin türünü belirtir, burada "button" olarak ayarlanmış 
+          Bootstrap'in çökertme işlevini etkinleştirir 
+          Hangi ögenin çökertileceğini belirtir, burada id'si "navbarNav" olan öge 
+          Erişilebilirlik için, hangi ögenin kontrol edildiğini belirtir 
+          Düğmenin başlangıçta kapalı olduğunu belirtir 
+          Erişilebilirlik için, düğmenin işlevini tanımlar 
+        > -->
+
+        <!-- .collapse.navbar-collapse.justify-content-center[id="navbarNav"]>ul.navbar-nav>li.nav-item*3>a.nav-link.text-light[href="#"][target="_blank"]>i.bi+{Link Text} -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://www.linkedin.com/in/aresulmrc/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://github.com/aresulmrc"
+                target="_blank"
+              >
+                <i class="bi bi-github"></i> GitHub
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="about.html">Hakkımda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <header class="text-center py-5 bg-black text-white">
+      <!-- py-5, üst (padding-top) ve alt (padding-bottom) iç boşluğunu 48px olarak ayarlar. -->
+      <div class="container">
+        <h1 class="display-4 fw-bold text-primary">AHMED RESÜL MERİÇ</h1>
+        <!-- fw-bold, yazıyı kalın hale getirmek için kullanılır-->
+        <p class="lead text-light-emphasis">
+          Siber Güvenlik Araştırmacısı | Güvenli Yazılım Geliştirme
+        </p>
+
+        <div class="row mt-4">
+          <!-- mt-4, Bootstrap’te margin-top (üst boşluk) değerini belirten bir sınıftır. -->
+          <div class="col-md-10 mx-auto">
+            <!-- mx-auto, Bootstrap'te yatayda (sağ ve sol) merkezi hizalama yapmak için kullanılır.
+              -->
+            <div class="card bg-dark text-light p-4 shadow-lg rounded">
+              <!-- rounded, Bootstrap’te köşeleri yuvarlamak için kullanılan bir sınıftır. -->
+              <div class="card-body">
+                <h3 class="fw-bold text-primary">
+                  <i class="bi bi-shield-lock"></i> Siber Güvenlik
+                </h3>
+                <p class="lead">
+                  Siber güvenlik alanına duyduğum ilgi, sistemlerin güvenliğini
+                  sağlama ve tehditleri analiz etme konularında kendimi
+                  geliştirmeme yol açtı. Ağ güvenliği, erişim kontrolü ve sistem
+                  koruma mekanizmaları üzerine çalışmalar yapıyorum.
+                </p>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item bg-dark text-light">
+                        <i class="bi bi-terminal"></i> Yazılım Dilleri:
+                        <strong>Python, Rust, JavaScript</strong>
+                      </li>
+                      <li class="list-group-item bg-dark text-light">
+                        <i class="bi bi-shield-lock"></i> Penetrasyon Testleri &
+                        Sistem Güvenliği
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item bg-dark text-light">
+                        <i class="bi bi-key-fill"></i> Kimlik Doğrulama & Erişim
+                        Kontrol Sistemleri
+                      </li>
+                      <li class="list-group-item bg-dark text-light">
+                        <i class="bi bi-lock-fill"></i> Kriptografi & Zafiyet
+                        Analizi
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <a href="about.html" class="btn btn-outline-light btn-lg mt-3"
+                  >Hakkımda Daha Fazla</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-5 bg-black text-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Sertifikalar</h2>
+        <ul class="list-group">
+          <li
+            class="list-group-item bg-dark text-light border-0 rounded-3 mb-2"
+          >
+            <a
+              class="text-light text-decoration-none cert-link"
+              href="files/Introduction_to_Cybersecurity_certificate.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Introduction to Cybersecurity
+            </a>
+          </li>
+          <li
+            class="list-group-item bg-dark text-light border-0 rounded-3 mb-2"
+          >
+            <a
+              class="text-light text-decoration-none cert-link"
+              href="files/NDG_Linux_Unhatched.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              NDG Linux Unhatched
+            </a>
+          </li>
+          <li
+            class="list-group-item bg-dark text-light border-0 rounded-3 mb-2"
+          >
+            <a
+              class="text-light text-decoration-none cert-link"
+              href="files/İşletim_Sistemlerine_Giriş_Sertifika.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              İşletim Sistemlerine Giriş
+            </a>
+          </li>
+          <li
+            class="list-group-item bg-dark text-light border-0 rounded-3 mb-2"
+          >
+            <a
+              class="text-light text-decoration-none cert-link"
+              href="files/Sızma_Testine_Giriş_Sertifika.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sızma Testine Giriş
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="mt-auto bg-black text-center text-light py-3">
+      <div class="container">
+        <div class="d-flex justify-content-center gap-3 mb-2">
+          <a
+            href="https://linkedin.com/in/aresulmrc"
+            target="_blank"
+            class="text-light nav-link"
+          >
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+          <a
+            href="https://github.com/aresulmrc"
+            target="_blank"
+            class="text-light nav-link"
+          >
+            <i class="bi bi-github fs-4"></i>
+          </a>
+        </div>
+        <p class="mb-0">© 2025 Ahmed. Tüm Hakları Saklıdır.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
